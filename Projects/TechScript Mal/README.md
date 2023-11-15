@@ -5,7 +5,7 @@ This is a sample e-commerce application built for learning purposes.
 
 The deployment instructions provided here are specific to an Azure cloud server running Ubuntu Linux.
 
-## Deployment Pre-Requisites
+## Deploy Pre-Requisites
 
 >**Create an Azure Virtual Machine**
 
@@ -18,6 +18,7 @@ The deployment instructions provided here are specific to an Azure cloud server 
 Connect to the Azure VM using SSH:
 ``` 
 #bash
+
 ssh azureuser@<your-vm-ip-address>
 ```
 **NOTE:** You may also refer to connect blade in the sidebar of azure vm there you will find everything what you need.
@@ -25,7 +26,18 @@ ssh azureuser@<your-vm-ip-address>
 >**Update the System**
 ```
 #bash
+
 sudo apt update
 sudo apt upgrade -y
 ```
 
+## Deploy and Configure Database
+
+>**Install MariaDB**
+```
+#bash
+
+sudo apt install -y mariadb-server
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+```
