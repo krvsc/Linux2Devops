@@ -47,10 +47,18 @@ sudo systemctl enable mariadb
 
 sudo mysql
 ```
+```
+#sql
 
-There are a couple of points you may want to consider before configurartion of mysql database:
+CREATE DATABASE ecomdb;
+CREATE USER 'ecomuser'@'localhost' IDENTIFIED BY 'ecompassword';
+GRANT ALL PRIVILEGES ON *.* TO 'ecomuser'@'localhost';
+FLUSH PRIVILEGES;
+```
 
->>Security Best Practices:
+**NOTE:** There are a two points you may want to consider to configurartion of mysql database in another way:
+
+>>1.Security Best Practices:
 
 It's generally a good practice to provide only the necessary privileges to the user. Instead of granting all privileges on *.*, you might want to specify the exact privileges needed for the ecomdb. 
 
@@ -61,3 +69,18 @@ It's generally a good practice to provide only the necessary privileges to the u
 GRANT SELECT, INSERT, UPDATE, DELETE ON ecomdb.* TO 'ecomuser'@'localhost';
 ```
 
+>>2.Database Host:
+
+If you plan to deploy the application on a multi-node setup, where the database server is on a different machine, you would need to replace 'localhost' with the actual hostname or IP address of the database server. 
+
+In your current setup, it's configured for a single-node setup.
+
+Example: if the database is on a separate machine with IP address 172.20.1.101, the SQL commands would be:
+```
+#sql
+
+CREATE DATABASE ecomdb;
+CREATE USER 'ecomuser'@'172.20.1.101' IDENTIFIED BY 'ecompassword';
+GRANT ALL PRIVILEGES ON ecomdb.* TO 'ecomuser'@'172.20.1.101';
+FLUSH PRIVILEGES;
+```
