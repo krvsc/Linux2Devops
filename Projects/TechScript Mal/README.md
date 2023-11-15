@@ -41,3 +41,9 @@ sudo apt install -y mariadb-server
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 ```
+>**Configure MariaDB**
+```
+#bash
+
+sudo mysql
+```
