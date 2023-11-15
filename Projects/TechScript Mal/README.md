@@ -22,3 +22,10 @@ ssh azureuser@<your-vm-ip-address>
 ```
 **NOTE:** You may also refer to connect blade in the sidebar of azure vm there you will find everything what you need.
 
+>**Update the System**
+```
+#bash
+sudo apt update
+sudo apt upgrade -y
+```
+
