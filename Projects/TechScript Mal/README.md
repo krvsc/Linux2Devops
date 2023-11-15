@@ -47,3 +47,17 @@ sudo systemctl enable mariadb
 
 sudo mysql
 ```
+
+There are a couple of points you may want to consider before configurartion of mysql database:
+
+>>Security Best Practices:
+
+It's generally a good practice to provide only the necessary privileges to the user. Instead of granting all privileges on *.*, you might want to specify the exact privileges needed for the ecomdb. 
+
+**Example:** If the user only needs to perform SELECT, INSERT, UPDATE, and DELETE operations, you can grant those specific privileges:
+```
+#sql
+
+GRANT SELECT, INSERT, UPDATE, DELETE ON ecomdb.* TO 'ecomuser'@'localhost';
+```
+
