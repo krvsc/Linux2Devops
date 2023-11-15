@@ -13,3 +13,12 @@ The deployment instructions provided here are specific to an Azure cloud server 
 2. Navigate to the Virtual Machines section and create a new Ubuntu VM.
 3. Follow the on-screen instructions to configure the VM.
 
+>**Connect to the Azure VM**
+
+Connect to the Azure VM using SSH:
+``` 
+#bash
+ssh azureuser@<your-vm-ip-address>
+```
+**NOTE:** You may also refer to connect blade in the sidebar of azure vm there you will find everything what you need.
+
