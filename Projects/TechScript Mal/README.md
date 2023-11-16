@@ -142,3 +142,10 @@ Change DirectoryIndex index.html to DirectoryIndex index.php:
 
 sudo sed -i 's/index.html/index.php/g' /etc/apache2/apache2.conf
 ```
+>**Start Apache**
+```
+#bash
+
+sudo systemctl start apache2
+sudo systemctl enable apache2
+```
