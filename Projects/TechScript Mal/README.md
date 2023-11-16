@@ -110,3 +110,9 @@ INSERT INTO products (Name, Price, ImageUrl) VALUES
   ("Phone", "80", "c-8.png"),
   ("Laptop", "150", "c-4.png");
 ```
+Run the SQL script:
+```
+#bash
+
+sudo mysql < db-load-script.sql
+```
