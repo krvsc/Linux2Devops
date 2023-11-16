@@ -134,3 +134,11 @@ If you are able to see table of your products then well done!🎉 You have done 
 #bash
 sudo apt install -y apache2 php libapache2-mod-php php-mysql
 ```
+>**Configure Apache**
+
+Change DirectoryIndex index.html to DirectoryIndex index.php:
+```
+#bash
+
+sudo sed -i 's/index.html/index.php/g' /etc/apache2/apache2.conf
+```
