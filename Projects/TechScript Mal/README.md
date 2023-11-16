@@ -84,3 +84,5 @@ CREATE USER 'ecomuser'@'172.20.1.101' IDENTIFIED BY 'ecompassword';
 GRANT ALL PRIVILEGES ON ecomdb.* TO 'ecomuser'@'172.20.1.101';
 FLUSH PRIVILEGES;
 ```
+
+## Load Product Inventory Information to Database
