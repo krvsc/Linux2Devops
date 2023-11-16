@@ -116,3 +116,11 @@ Run the SQL script:
 
 sudo mysql < db-load-script.sql
 ```
+**NOTE**: After these steps you can check whether data is stored in db or not by running the following two commands:
+```
+#bash
+sudo mysql
+
+#sql
+show databases;
+```
