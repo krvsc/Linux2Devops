@@ -86,3 +86,4 @@ FLUSH PRIVILEGES;
 ```
 
 ## Load Product Inventory Information to Database
+Create the db-load-script.sql file:
