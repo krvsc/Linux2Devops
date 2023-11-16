@@ -128,4 +128,9 @@ select * from products;
 ```
 If you are able to see table of your products then well done!🎉 You have done it 👏 otherwise go back and load inventory.🤗
 
-## Deploy and Configure Web
+## Deploy and Configure Web 🙌
+>**Install Required Packages**
+```
+#bash
+sudo apt install -y apache2 php libapache2-mod-php php-mysql
+```
