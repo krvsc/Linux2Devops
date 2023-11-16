@@ -116,11 +116,16 @@ Run the SQL script:
 
 sudo mysql < db-load-script.sql
 ```
-**NOTE**: After these steps you can check whether data is stored in db or not by running the following two commands:
+**NOTE**: After these steps you can check whether data is stored in db or not by running the following commands:
 ```
 #bash
 sudo mysql
 
 #sql
 show databases;
+use ecomdb;
+select * from products;
 ```
+If you are able to see table of your products then well done!🎉 You have done it 👏 otherwise go back and load inventory.🤗
+
+## Deploy and Configure Web
