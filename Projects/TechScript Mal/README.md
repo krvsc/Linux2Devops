@@ -150,3 +150,8 @@ sudo systemctl start apache2
 sudo systemctl enable apache2
 ```
 >**Download Code**
+```
+#bash
+sudo apt install -y git
+sudo git clone https://github.com/krvsc/Linux2Devops.git /var/www/html/
+```
