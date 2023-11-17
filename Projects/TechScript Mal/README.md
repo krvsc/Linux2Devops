@@ -149,3 +149,4 @@ sudo sed -i 's/index.html/index.php/g' /etc/apache2/apache2.conf
 sudo systemctl start apache2
 sudo systemctl enable apache2
 ```
+>**Download Code**
